@@ -12,7 +12,6 @@ html, body{
     background-size: cover;
 }
 
-
 .text-overlay {
     position: flex;
     font-size: 2rem;
@@ -64,8 +63,9 @@ button {
     position: relative;
     border: none;
     background-color: #10ddc2;
-    padding: 20px 40px;
+    padding: 20px 20px;
     text-decoration: none;
+    text-align: center;
     display: inline-block;
     font-size: 18px;
     color: #fff;
@@ -85,6 +85,7 @@ button:hover {
     button {
         font-size: 14px;
         padding: 10px 20px;
+        
     }
 }
 
@@ -92,6 +93,7 @@ button:hover {
     button {
         font-size: 12px;
         padding: 8px 16px;
+        align-items: center;
     }
 }
 
@@ -153,10 +155,6 @@ hr {
 
 }
 
-body {
-    scroll-behavior: smooth; /* Apply smooth scroll behavior to the entire page */
-    height: 105%;
-}
 
 .h2-om-mig {
     font-size: 40px;
@@ -167,25 +165,21 @@ body {
 }
 
 
-.image-container img {
-    max-width: 35%; /* Ensure the image fits within the container */
-    border-radius: 20px;
-    margin-top: 6%;
-    margin-left: 50%;
-    display: flex;
-}
 
-.om-mig {
+.om-mig-box {
     background-color: rgba(95, 179, 247, 0.267);
     display: flex;
-    margin-top: 3%;
-    height: 43%;
     width: 68%;
     margin-left: 16%;
     border-radius: 2%;
 }
-
-.erfarenheter1 {
+.image-container {
+    /* Ensure the image fits within the container */
+    display: flex;
+    position: relative;
+    
+}
+.om-mig {
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     margin-top: 5%; 
@@ -195,9 +189,9 @@ body {
     width: 80%;
 }
 
-.pp{
+.om-mig-p{
     text-align: left; 
-    width: 160%;
+    width: 100%;
     margin-right: 10%;
     margin-top: 5%;
 }
@@ -209,7 +203,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color: rgba(0, 0, 0, 0.712);
     left: 15rem;
-    
 }
 
 .information {
