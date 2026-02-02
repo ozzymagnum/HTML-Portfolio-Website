@@ -13,7 +13,6 @@ html, body{
 }
 
 .text-overlay {
-    position: flex;
     font-size: 2rem;
     margin-top: 1%; /* Adjust as needed for vertical positioning */
     display: flex;
@@ -59,43 +58,44 @@ h4 {
     transition-duration: 0.4s;
 }
 
+.button-div {
+    display: flex;           /* Flexbox aktiverad */
+    justify-content: center; /* Centrerar horisontellt */
+    margin-top: 2rem;        /* Lite utrymme ovanför */
+}
+
 button {
-    position: relative;
     border: none;
     background-color: #10ddc2;
-    padding: 20px 20px;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
+    padding: 20px 40px;
     font-size: 18px;
     color: #fff;
-    margin-left: 44%;
-    transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: #30d8b3;
     opacity: 0.8;
-  }
+}
 
-  @media (max-width: 768px) {
+/* Responsiv knapp */
+@media (max-width: 768px) {
     button {
-        font-size: 14px;
-        padding: 10px 20px;
-        
+        font-size: 16px;
+        padding: 15px 30px;
     }
 }
 
 @media (max-width: 480px) {
     button {
-        font-size: 12px;
-        padding: 8px 16px;
-        align-items: center;
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
+
 
 .container2 {
     margin-top: 20px;
@@ -173,15 +173,10 @@ hr {
     margin-left: 16%;
     border-radius: 2%;
 }
-.image-container {
-    /* Ensure the image fits within the container */
-    display: flex;
-    position: relative;
-    
-}
 .om-mig {
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
+    margin-top: 6%;
     margin-left: 12%;
     text-align: left; 
     color: rgba(0, 0, 0, 0.712);
