@@ -1,16 +1,18 @@
 html, body{
-    height: 140%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 .container {
-    position: relative;
-    width: 100%; /* Set the width of the container */
-    height: 50rem; /* Set the height of the container */
-    background-image: url("image/Background1.jpg") ;
+    width: 100%;
+    background-image: url("image/Background1.jpg");
     background-size: cover;
+    background-position: center;
+    min-height: 48rem;
+    position: relative; /* Viktigt för overlay-text */
 }
+
 
 .text-overlay {
     font-size: 2rem;
@@ -144,7 +146,14 @@ button:hover {
     text-align: center; /* Center the "erfarenheter" text */
     color: rgba(0, 0, 0, 0.712);
 }
-
+.ommig1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    text-align: center; /* Center the "erfarenheter" text */
+    color: rgba(0, 0, 0, 0.712);
+}
 
 hr {
     border: 1px solid rgba(219, 218, 218, 0.5);
@@ -152,7 +161,6 @@ hr {
     margin-top: 2%; 
     margin-right: 18%;
     border-style: dotted;
-
 }
 
 
@@ -165,19 +173,18 @@ hr {
 }
 
 
-
 .om-mig-box {
-    background-color: rgba(95, 179, 247, 0.267);
+    background-color: rgba(111, 141, 167, 0.267);
     display: flex;
     width: 68%;
     margin-left: 16%;
-    border-radius: 2%;
+    margin-bottom: 10%;
 }
 .om-mig {
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 6%;
     margin-left: 12%;
+    height: 35rem; /* exempel: minst 400px hög */
     text-align: left; 
     color: rgba(0, 0, 0, 0.712);
     width: 80%;
@@ -187,23 +194,15 @@ hr {
     text-align: left; 
     width: 100%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .h1-kontakt {
-    text-align: left;
-    margin-top: 4%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     color: rgba(0, 0, 0, 0.712);
-    left: 15rem;
 }
 
-.information {
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    height: 20%;
-    border-radius: 10%;
-}
+
  
 
